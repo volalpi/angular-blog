@@ -1,6 +1,6 @@
 <li [ngClass]="{'list-group-item' : true,
-                'list-group-item-success': isLoveIts(),
-                'list-group-item-danger': !isLoveIts()}">
+                'list-group-item-success': isLoveBiggerThanDontLoveIt(),
+                'list-group-item-danger': !isLoveBiggerThanDontLoveIt()}">
   <div class="row">
     <div class="col-xs-9">
       <h3> {{ title }} </h3>
@@ -14,6 +14,6 @@
   </p>
   <button class="btn btn-success"
           (click) = "incrementeLoveIts()">Love it! ({{loveItNumber}}) </button>
-  <button class="btn btn-danger"
+  &nbsp;<button class="btn btn-danger"
           (click) = "incrementeDontLoveIts()">Don't love it! ({{dontLoveItNumber}})</button>
 </li>

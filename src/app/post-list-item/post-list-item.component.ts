@@ -21,7 +21,7 @@ export class PostListItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  isLoveIts() {
+  isLoveBiggerThanDontLoveIt() {
     return this.loveItNumber >= this.dontLoveItNumber;
   }
 
